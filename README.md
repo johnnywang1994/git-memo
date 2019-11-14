@@ -33,14 +33,14 @@ Git 會把你的檔案標記為三種主要的狀態：已提交（committed）�
 
 ## 基礎使用
 
-＊ [第一篇](https://github.com/johnnywang1994/test-repo/basic.md) Git 基礎指令
+＊ [第一篇](https://github.com/johnnywang1994/git-memo/basic.md) Git 基礎指令
 
-＊ [第二篇](https://github.com/johnnywang1994/test-repo/recover.md) Git 復原指令
+＊ [第二篇](https://github.com/johnnywang1994/git-memo/recover.md) Git 復原指令
 
-＊ [第三篇](https://github.com/johnnywang1994/test-repo/remote.md) Git 選端協作指令
+＊ [第三篇](https://github.com/johnnywang1994/git-memo/remote.md) Git 選端協作指令
 
-＊ [第四篇](https://github.com/johnnywang1994/test-repo/tag.md) Git 標籤指令
+＊ [第四篇](https://github.com/johnnywang1994/git-memo/tag.md) Git 標籤指令
 
-＊ [第五篇](https://github.com/johnnywang1994/test-repo/branch.md) Git 分支指令
+＊ [第五篇](https://github.com/johnnywang1994/git-memo/branch.md) Git 分支指令
 
-＊ [第六篇](https://github.com/johnnywang1994/test-repo/merge.md) Git 分支和合併的基本用法
+＊ [第六篇](https://github.com/johnnywang1994/git-memo/merge.md) Git 分支和合併的基本用法
