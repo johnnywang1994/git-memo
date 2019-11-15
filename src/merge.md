@@ -1,5 +1,20 @@
 ## Merge 分支合併指令
 
+`git merge` 是用於從指定的commit(s)合併到當前分支的操作。
+
+常見有以下三種：
+
+  1. git merge [-n] [--stat] [--no-commit] [--squash] [--[no-]edit] [-s <strategy>] [-X <strategy-option>] [-S[<keyid>]] [--[no-]rerere-autoupdate] [-m <msg>] [<commit>...]
+
+  2. git merge -m <msg> <commit>....
+
+  3. git merge --abort
+
+其中一二差別在於添加 `msg`，第三種僅在合併後導致衝突時使用，將會拋棄合併過程，並嘗試重建合併前的狀態，但是～！當合併開始時，如果存在未 commit 的文件，此指令有可能會無法重現合併前的狀態，特別是這些未 commit 文件在合併過程中將會被修改時。
+
+使用 `git merge` 時盡量不要出現未 commit 的文件，如果逼不得已必須先暫存的話，可以使用 `git stash` 將這些未 commit 文件保存，待處理完 conflick 後，使用 `git stash pop` 還原出來即可。
+
+
 ### 分支的基本用法
 
 首先，我們假設你正在開發你的專案，並且已經有一些提交（commit）了。
@@ -74,3 +89,5 @@ Git 必需進行一些處理，進行一次簡單的三方合併。
 
 這個提交被稱為「合併提交（merge commit）」
 
+
+### 

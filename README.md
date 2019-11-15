@@ -44,3 +44,26 @@ Git 會把你的檔案標記為三種主要的狀態：已提交（committed）�
 ＊ [第五篇](https://github.com/johnnywang1994/git-memo/blob/master/src/branch.md) Git 分支指令
 
 ＊ [第六篇](https://github.com/johnnywang1994/git-memo/blob/master/src/merge.md) Git 分支和合併的基本用法
+
+
+## 相關概念
+
+  1. Git分支模型中存在兩個主分支，Master, Develop
+
+  - master：
+
+    Git 中默認的主分支。在 Git 分支開發模型中，master 分支的 HEAD 節點始終處於“準備好進行生產的狀態”，即 master 分支的 HEAD 節點所指向的版本始終是可以用於生產環境的正式版本。當其他分支的代碼版本合併到 master 分支時（隨後打上版本標籤），通常意味著一個新的正式版本已經發布。
+
+  - develop：
+  
+    HEAD 節點總是指向下一個待發布版本的最新變化。 develop 分支的版本變更通常來源於輔助分支的合併，因此 develop 分支也常被稱為“整合分支”。當 develop 分支達到某一穩定點，可進行新版本的發佈時，develop 分支上的所有變更應該被合併到 master 分支並打上tag標籤
+
+  2. 多 commit，少 push，push 太頻繁容易造成 conflict，少 merge。
+
+  3. 推薦使用 Git Flow
+
+  4. 多使用分支，保持主分支的整潔，
+
+
+
+3. 
