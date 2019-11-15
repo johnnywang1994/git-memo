@@ -104,10 +104,10 @@ $ git commit -a -m "Init repo"
 
   - `--graph`：會附加一個還不錯的 ASCII 圖形用來顯示分支及合併的歷史。
 
-實作上很常使用以下指令綜觀整個歷史紀錄
+常使用以下指令綜觀整個歷史紀錄
 
 ```cmd
-$ git log --oneline --graph
+$ git log --color --decorate --oneline --graph
 ```
 
 
