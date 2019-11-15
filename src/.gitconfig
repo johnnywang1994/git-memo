@@ -1,0 +1,29 @@
+[alias]
+	st = status
+  sts = status -s
+	br = branch
+	co = checkout
+  cob = checkout -b
+  com = checkout master
+  ci = commit
+  reci = commit --amend
+  cim = commit -m
+  ciam = commit -a -m
+	cl = clone
+  pl = pull
+  plo = pull origin
+  ps = push
+  pso = push origin
+	cf = config
+	cfg = config --global
+  cfl = config --list
+	cfgl = config --global --list
+  t = tag
+  td = tag -d
+  undo = restore
+  unstaged = restore --staged
+  rst = reset
+  mrg = merge
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[core]
+  editor = 'nvim'
