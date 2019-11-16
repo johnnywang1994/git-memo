@@ -1,6 +1,8 @@
 ## Merge 分支合併指令
 
-`git merge` 是用於從指定的commit(s)合併到當前分支的操作。
+`git merge` 是用於從指定的commit(s)合併到當前分支的操作。預設特徵是他會將目標分支最新的 commit 接到目前的分支，並提交一個新的合併 commit。
+
+如果只是簡單的功能，可以在 merge 時加上 --squash，會在合併前將該分支裡的提交濃縮成一個 commit 後，再進行合併。
 
 常見有以下三種：
 
@@ -90,4 +92,7 @@ Git 必需進行一些處理，進行一次簡單的三方合併。
 這個提交被稱為「合併提交（merge commit）」
 
 
-### 
+
+## Rebase 合併指令
+
+`git rebase` 是用於將目前分支的 commit(s) 串上目標分支的操作。結束後兩個分支將串連在一起，協作時請謹慎使用。若 rebase 對象在當前的分支，且該分支的 commit 較新，則會將當前分支進行 fast-forward 到該目標 commit 上。
