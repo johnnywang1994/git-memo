@@ -53,3 +53,8 @@ $ git fetch [remote-name]
 ```cmd
 git push [remote-name] [branch-name]
 ```
+
+
+### 發生電腦儲存預設使用者時的狀況
+
+透過 `git config --show-origin --get credential.helper` 確認 gitconfig 位置，然後將 helper 右邊的 osxkeychain 刪除就會回復預設，在下次推送提交時就會正常發出詢問。
